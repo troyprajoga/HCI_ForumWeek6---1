@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color:white;
+    background-size:cover;
+    background-position:center;
+}
+.navbar{
+    width: 85%;
+    margin:auto;
+    padding:35px 0;
+    display: flex;
+    align-items: center;
+    border: 5px solid rgb(79, 184, 212);
+    padding: 10px;
+    border-radius: 5%;
+    background-color: rgb(103, 210, 240);
+    justify-content: space-between;
+}
+.navbar h6{
+    font-size:70px;
+    margin-right: auto;
+}
+.account,.bell{
+    width:120px;
+    cursor:pointer;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+.container{
+    width: 100%;
+    height:auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top:10px;
+    flex-flow:wrap;
+    flex-direction: row;
+}
+.content{
+    width:43%;
+    height:500px;
+    background-color: whitesmoke;
+    border: 5px solid lightgray;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    box-sizing: border-box;
+}
+.content h1{
+    font-size: 50px;
+    text-align: center;
+    transform: translateY(-35%);
+}
+.content h2{
+    font-size: 35px;
+    text-align: center;
+}
+.icon{
+    width: 60px;
+    cursor:pointer;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+@media screen and (max-width: 500px) {
+    .container,.content {
+        flex-direction: column;
+    }
+}
